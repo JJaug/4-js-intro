@@ -68,20 +68,20 @@ const kaipKilti = 'liftas'; // laiptai, liftas
 if (namoTipas === 'namas') {
     if (kaipKilti === 'laiptai'){
         console.log('einu y nama ir kylu laiptais');
-    } else if (kaipKilti === 'liftas') {
+        } else if (kaipKilti === 'liftas') {
         console.log('Ieinu y nama ir kylu liftu');
-    }else {
+        }else {
         console.log('Ieinu i buta ir nera kaip kilti');
-    }
-} else if (namoTipas === 'butas') {
-    if (kaipKilti === 'laiptai'){
+        }
+}   else if (namoTipas === 'butas') {
+        if (kaipKilti === 'laiptai'){
         console.log('einu y buta ir kylu laiptais');
-    } else if (kaipKilti === 'liftas') {
+    }   else if (kaipKilti === 'liftas') {
         console.log('Ieinu y buta ir kylu liftu');
-    } else {
+    }   else {
         console.log('Ieinu i buta ir nera kaip kilti');
     }
- } else {console.log('Nurodytas blogas namo tipas');
+ }  else {console.log('Nurodytas blogas namo tipas');
     
 }
 
