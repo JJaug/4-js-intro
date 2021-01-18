@@ -67,3 +67,8 @@ const arrsakinys2 = arrzodis2[4] + ', ' + arrzodis2[3] + ', ' + arrzodis2[2] + '
 console.log(arrsakinys2);
 const arrsakinys3 = arrzodis1[4] + ', ' + arrzodis3[3] + ', ' + arrzodis3[2] + ', ' + arrzodis3[1] + ', ' + arrzodis3[0];
 console.log(arrsakinys3);
+
+
+
+
+

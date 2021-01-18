@@ -1,4 +1,4 @@
-"strict use";
+"use strict";
 // vienos eilutes komentaras
 
 
@@ -22,7 +22,7 @@ reiksmiu tipai:
 */
 
 /*
-kintamuju iniciavimo bidai
+kintamuju iniciavimo budai
     const (pagrindinis, kuria reikia rinkis by default)
     let (renkames jei info keiciasi)
     var (nenaudoti)
@@ -83,9 +83,9 @@ console.log(s1 + s2);
 console.log(s1 - s2);
 console.log(s1 * s2);
 console.log(s1 / s2);
-console.log(s1 ** s2);
+console.log(s1 ** s2);   // pakelti kvadratu
 
-console.log(2 + 2 * 2);
+console.log(2 + 2 * 2);  // islaiko matematine logika
 console.log((2+2)*2);
 
 console.log('-------------');
@@ -123,12 +123,15 @@ console.log(abiTekste2);
 const abiTekste12 = 'Tekste yra abi kabutes 1 (\') ir 2 (\").';
 console.log(abiTekste12);
 
-const abiTekste21 = "Tekste yra abi kabutes 1 (\') ir 2 (\").";
+const abiTekste21 = "Tekste yra abi kabutes 1 (\') ir 2 (\").";   // \- nera simbolis, o tiesiog priskiria sekanti simboli kaip teksto dali
 console.log(abiTekste21);
 
 const imgSrc = './img/dogo.jpg';
 const h1 = 'Labas rytas!';
 const p = 'fsdfsdfsdfsdfsfsdss';
+
+// \n\- reiskia kad toliau reikia pradeti nuo naujos eilutes
+
 
 const html = '  <main>\n\
 < img src = "'+imgSrc+'">\n\
