@@ -130,3 +130,10 @@ if (sar1Ilgis <= sar2Ilgis) {
 } else {
     console.log('Bandykite dar karta');
 }
+
+
+
+console.log('-----------------------');
+
+
+
