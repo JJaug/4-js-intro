@@ -8,17 +8,26 @@ SALYGOS:
 function multiply(a, b) {
     if (typeof a !== 'number') {
         return 'ERROR: pirmasis parametras turi buti skaicius.';
-    }else if (isNaN(a)) {
+    }if (''+ a === 'NaN') {
          return 'ERROR: pirmasis parametras turi buti tikras skaicius.';
      }
+    if (a === Infinity || a === -Infinity) {
+       return 'ERROR: pirmasis parametras negali buti begalybe.';
+}
+//    if (Math.abs(a) === Infinity) {
+//        return 'ERROR: pirmasis parametras negali buti begalybe.';     Alternatyvus variantas
+//    }
+
 
     if (typeof b !== 'number') {
         return 'ERROR: antrasis parametras turi buti skaicius.';
-    } else if (isNaN(b)) {
+    } else if (!isFinite(b)) {
         return 'ERROR: antrasis parametras turi buti tikras skaicius.';
     }
 
-    return a * b;
+    const rez = a * b;
+
+    return rez === 0 ? 0 : rez;
 }
 
 
@@ -36,6 +45,6 @@ console.log(multiply(-22, -2), '->', 44);
 console.log(multiply(0.4, 3.65), '->', 1.46);
 console.log(multiply(-1, 0), '->', 0);
 
-console.log(multiply(NaN, 5));
-console.log(multiply(NaN, NaN));
-console.log(multiply(8, NaN));
+console.log(multiply(Infinity, 5));
+console.log(multiply(Infinity, Infinity));
+console.log(multiply(8, Infinity));
